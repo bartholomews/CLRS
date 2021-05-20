@@ -6,17 +6,19 @@ fn main() {
     section_02::main();
 }
 
-const TERMINAL_SIZE: usize = 145;
+const TERMINAL_SIZE: usize = 140;
 
 trait QA {
     fn number(&self) -> String;
     fn question(&self) -> String;
     fn answer(&self) -> String;
     fn run(&self) {
-        println!("[{}]", &self.number());
+        println!();
+        println!("[{}]\n", &self.number());
         println!("{}", &self.question());
-        println!("{}", "-".repeat(TERMINAL_SIZE));
+        println!();
         println!("{}", &self.answer());
+        println!();
         println!("{}", "*".repeat(TERMINAL_SIZE));
     }
 }
@@ -28,7 +30,7 @@ pub struct Exercise {
 }
 
 impl QA for Exercise {
-    fn number(&self) -> String {  return String::from(&self.number); }
-    fn question(&self) -> String {  return String::from(&self.question); }
+    fn number(&self) -> String { return String::from(&self.number); }
+    fn question(&self) -> String { return String::from(&self.question); }
     fn answer(&self) -> String { return String::from(&self.answer); }
 }

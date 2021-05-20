@@ -9,8 +9,8 @@ pub fn ex_1_1_1() -> Exercise {
         ),
         answer: String::from(
             "A checkout system requires sorting if it has to implement some more advanced functionality \
-            (e.g. some logic based on repeating items etc.).\n\
-            But in general any system which does ranking or indexing requires sorting.\n\
+            (e.g. some logic based on repeating items etc.)\n\
+            but in general any system which does ranking or indexing requires sorting.\n\
             Convex hull could be used in image processing, e.g. you might want to do calculations \
             within an \"interesting area\" inside the convex hull.\n\
             References:\n\

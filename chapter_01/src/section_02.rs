@@ -18,7 +18,7 @@ pub fn main() {
 }
 
 fn ex_1_1() -> Exercise {
-    const CELL_SIZE: usize = 18;
+    const CELL_SIZE: usize = 17;
     fn first_cell(str: String) -> String { format!("{: ^1$}|", str, CELL_SIZE - 9) }
     fn cell(str: String) -> String { format!("{: ^1$}|", str, CELL_SIZE) }
     fn row_separator() -> String { format!("{:-<1$}", "", CELL_SIZE * 8) }

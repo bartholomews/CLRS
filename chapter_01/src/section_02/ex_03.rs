@@ -10,9 +10,9 @@ pub fn ex_1_2_3() -> Exercise {
     return Exercise {
         number: String::from("1.2-3"),
         question: String::from(
-            "What is the smallest value of `n` such that an algorithm whose running time is `100n^2`\
+            "What is the smallest value of `n` such that an algorithm whose running time is `100n^2`\n\
             runs faster than an algorithm whose running time is `2^n` on the same machine?"
         ),
-        answer: format!("The smallest value of `n` such that `100n^2` is faster than `2^n` is {}", n)
+        answer: format!("The smallest value of `n` such that `100n^2` is faster than `2^n` is {}.", n)
     };
 }
