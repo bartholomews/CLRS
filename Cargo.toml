@@ -4,7 +4,9 @@
 
 name = "clrs"
 members = [
-    "chapter_01"
+    "exercises",
+    "chapter_01",
+    "chapter_02",
 ]
 version = "0.1.0"
 edition = "2018"

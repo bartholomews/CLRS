@@ -1,12 +1,10 @@
 [package]
-name = "chapter_01"
+name = "exercises"
 version = "0.1.0"
 authors = ["bartholomews <github@bartholomews.io>"]
 edition = "2018"
 
+# https://doc.rust-lang.org/stable/book/ch14-03-cargo-workspaces.html
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-exercises = { path = "../exercises" }
-bigdecimal = "0.2.0"
-num = "0.4.0"

@@ -1,4 +1,4 @@
-use crate::Exercise;
+use exercises::Exercise;
 
 pub fn ex_1_2_3() -> Exercise {
     let mut n: u32 = 1;
@@ -13,6 +13,6 @@ pub fn ex_1_2_3() -> Exercise {
             "What is the smallest value of `n` such that an algorithm whose running time is `100n^2`\n\
             runs faster than an algorithm whose running time is `2^n` on the same machine?"
         ),
-        answer: format!("The smallest value of `n` such that `100n^2` is faster than `2^n` is {}.", n)
+        answer: format!("The smallest value of `n` such that `100n^2` is faster than `2^n` is {}.", n),
     };
 }

@@ -1,4 +1,4 @@
-use crate::Exercise;
+use exercises::Exercise;
 
 pub fn ex_1_1_2() -> Exercise {
     return Exercise {

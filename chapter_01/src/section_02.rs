@@ -3,7 +3,8 @@ use std::str::FromStr;
 use bigdecimal::{BigDecimal, FromPrimitive, ToPrimitive};
 use num::BigInt;
 
-use crate::{Exercise, QA};
+use exercises::{Exercise, QA};
+
 use crate::section_02::ex_01::ex_1_2_1;
 use crate::section_02::ex_02::ex_1_2_2;
 use crate::section_02::ex_03::ex_1_2_3;
@@ -153,7 +154,7 @@ fn ex_1_1() -> Exercise {
     n_cubed += row_separator().as_str();
 
     // two_pow_n
-    let mut two_pow_n= first_cell(String::from("2^n"));
+    let mut two_pow_n = first_cell(String::from("2^n"));
     for (time, _) in running_times_microseconds.iter() {
         // https://www.purplemath.com/modules/solvexpo2.htm
         // 2^n = time

@@ -1,14 +1,12 @@
-use crate::Exercise;
+use exercises::Exercise;
 
 pub fn ex_1_2_2() -> Exercise {
     fn calc_insertion_sort(n: f64) -> f64 { return 8.0 * n.exp2(); }
     fn calc_merge_sort(n: f64) -> f64 { return 64.0 * n * n.log(2.0); }
     fn calc(n: f64) -> String {
-
         fn f(x: f64) -> String {
             let trunc = x.trunc();
-            if trunc == x { format!("{}", trunc) }
-            else { format!("~{}", trunc) }
+            if trunc == x { format!("{}", trunc) } else { format!("~{}", trunc) }
         }
 
         let insert = calc_insertion_sort(n);

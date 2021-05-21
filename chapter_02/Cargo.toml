@@ -1,5 +1,5 @@
 [package]
-name = "chapter_01"
+name = "chapter_02"
 version = "0.1.0"
 authors = ["bartholomews <github@bartholomews.io>"]
 edition = "2018"
@@ -8,5 +8,3 @@ edition = "2018"
 
 [dependencies]
 exercises = { path = "../exercises" }
-bigdecimal = "0.2.0"
-num = "0.4.0"
