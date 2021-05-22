@@ -10,9 +10,19 @@ pub fn sort<T: Ord>(arr: &mut [T]) {
         It can be proved inductively, with the base case at initialization
         and the inductive step on each iteration.
          */
-        while j > 0 && arr[j-1] > arr[j] {
+        while j > 0 && arr[j - 1] > arr[j] {
             arr.swap(j - 1, j);
-            j = j - 1;
+            j -= 1;
+        }
+    }
+}
+
+pub fn sort_decreasing<T: Ord>(arr: &mut [T]) {
+    for i in 1..arr.len() {
+        let mut j = i;
+        while j > 0 && arr[j - 1] < arr[j] {
+            arr.swap(j - 1, j);
+            j -= 1;
         }
     }
 }
