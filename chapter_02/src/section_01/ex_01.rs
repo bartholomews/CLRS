@@ -1,9 +1,9 @@
-use crate::insertion;
+use crate::insertion_sort;
 use exercises::Exercise;
 
 pub fn ex_2_1_1() -> Exercise {
     let arr = &mut vec![31, 41, 59, 26, 41, 58];
-    insertion::sort(arr);
+    insertion_sort::inc(arr);
     return Exercise {
         number: String::from("2.1-1"),
         question: String::from(

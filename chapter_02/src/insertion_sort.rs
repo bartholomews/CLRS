@@ -1,4 +1,4 @@
-pub fn sort<T: Ord>(arr: &mut [T]) {
+pub fn inc<T: Ord>(arr: &mut [T]) {
     for i in 1..arr.len() {
         let mut j = i;
         /*
@@ -17,7 +17,7 @@ pub fn sort<T: Ord>(arr: &mut [T]) {
     }
 }
 
-pub fn sort_decreasing<T: Ord>(arr: &mut [T]) {
+pub fn dec<T: Ord>(arr: &mut [T]) {
     for i in 1..arr.len() {
         let mut j = i;
         while j > 0 && arr[j - 1] < arr[j] {
