@@ -20,18 +20,6 @@ pub fn ex_2_1_2() -> Exercise {
              \t }}\n\
             }}\n\n\
             --------------------------------------------\n\
-            insertion::sort\n\
-            --------------------------------------------\n\
-            pub fn inc<T: Ord>(arr: &mut [T]) {{\n\
-            \tfor i in 1..arr.len() {{\n\
-            \t\tlet mut j = i;\n\
-            \t\twhile j > 0 && arr[j - 1] > arr[j] {{\n\
-            \t\t\tarr.swap(j - 1, j);\n\
-            \t\t\tj -= 1;\n\
-            \t\t}}\n\
-            \t}}\n\
-            }}\n\
-            --------------------------------------------\n\
             {:?}\n\
             {:?}", a1, a2
         ),

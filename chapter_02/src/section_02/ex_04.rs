@@ -8,6 +8,7 @@ pub fn ex_2_2_4() -> Exercise {
         ),
         answer: String::from(
             "With an ad-hoc condition to check if that is a best-case. \n\
-            E.g. any sorting algorithm will run in `Θ(n)` with that check."),
+            (e.g. any sorting algorithm will run in `Θ(n)` best case with that check, \n\
+            traversing the already ordered sequence to verify that condition)."),
     };
 }

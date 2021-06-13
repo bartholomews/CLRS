@@ -29,10 +29,11 @@ pub fn ex_2_2_2() -> Exercise {
             the algorithms checks all the elements at each iteration, \n\
             the ones that are left over are always the larger; \
             so if there is only one left, that will be the larger. \n\
-            Both best and worst case will run in `Θ(n2)`, since each element \n\
+            Both best and worst case will run in `Θ(n2)`, since each element \
             will be compared with all the other elements - 1\n\n\
             --------------------------------------------\n\
             selection::sort\n\
+            --------------------------------------------\n\
             pub fn apply<T: Ord>(arr: &mut [T]) {{\n\
             \tfor i in 0..arr.len() - 1 {{\n\
             \t\tlet s = i;\n\

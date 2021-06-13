@@ -26,3 +26,14 @@ pub fn dec<T: Ord>(arr: &mut [T]) {
         }
     }
 }
+
+pub fn recursive<T: Ord>(arr: &mut [T], j: usize) {
+    if j > 0 {
+        recursive(arr, j - 1);
+        let mut i: usize = j - 1;
+        while i > 0 && arr[i] > arr[i + 1] {
+            arr.swap(i, i + 1);
+            i -= 1;
+        }
+    }
+}
